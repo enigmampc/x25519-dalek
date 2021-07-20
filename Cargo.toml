@@ -33,7 +33,6 @@ travis-ci = { repository = "dalek-cryptography/x25519-dalek", branch = "master"}
 features = ["nightly"]
 
 [dependencies]
-curve25519-dalek = { version = "3", default-features = false }
 rand_core = { version = "0.5", default-features = false }
 # `serde` is renamed to `our_serde` in order to avoid a name collision between
 # importing the serde dependency and enabling the curve25519-dalek/serde feature
@@ -45,7 +44,6 @@ version = "3"
 git = "https://github.com/enigmampc/curve25519-dalek"
 branch = "main"
 default-features = false
-features = ["u64_backend"]
 
 [dev-dependencies]
 bincode = "1"
